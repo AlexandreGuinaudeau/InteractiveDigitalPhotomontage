@@ -4,7 +4,7 @@ SET(OpenCV_STATIC OFF)
 FIND_PACKAGE(OpenCV REQUIRED)
 INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
 
-PROJECT(TP5)
+PROJECT(Photomontage)
 
-ADD_EXECUTABLE(GC graphCuts.cpp image.cpp image.h maxflow/graph.cpp)
-TARGET_LINK_LIBRARIES(GC ${OpenCV_LIBS})
+ADD_EXECUTABLE(Photomontage graphCuts.cpp image.cpp image.h maxflow/graph.cpp)
+TARGET_LINK_LIBRARIES(Photomontage ${OpenCV_LIBS})
